@@ -21,7 +21,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('img', function () {
-    gulp.src('assets/src/img/*')
+    gulp.src('assets/src/img/**/*')
         .pipe(imagemin([
             imagemin.gifsicle({ interlaced: true }),
             imagemin.jpegtran({ progressive: true }),
@@ -35,3 +35,7 @@ gulp.task('img', function () {
         ]))
         .pipe(gulp.dest('assets/img'));
 });
+
+gulp.watch('assets/src/sass/**/*.scss', ['sass']);
+gulp.watch('assets/src/js/**/*.js', ['js']);
+gulp.watch('assets/src/img/**/*', ['img']);
