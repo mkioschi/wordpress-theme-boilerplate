@@ -1,0 +1,12 @@
+/*
+  Aplica os prefixos nas propriedades
+  @param  {String} $prop  [Propriedade (width, transition. border-radius, etc)]
+  @param  {[type]} $value [valor da propriedade]
+ */
+@mixin prefix($prop, $value) {
+  -webkit-#{$prop}: $value;
+     -moz-#{$prop}: $value;
+       -o-#{$prop}: $value;
+      -ms-#{$prop}: $value;
+          #{$prop}: $value;
+}

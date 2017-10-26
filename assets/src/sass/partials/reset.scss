@@ -1,0 +1,29 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow-x: hidden !important;
+  *{
+    position: relative; outline: none !important;
+    margin: 0; padding: 0;
+    line-height: 1;
+    @include prefix(box-sizing, border-box);
+  }
+}
+
+form {
+  fieldset {
+    border: none;
+  }
+}
+
+ol, ul { list-style: none; }
+
+a {
+  font: inherit inherit; text-decoration: none; color: inherit;
+}
+
+/* Clears  */
+body:after { display:block; content:"."; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
