@@ -1,4 +1,23 @@
 {
+  "name": "wordpress-theme-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate para desenvolvimento de temas em Wordpress. O intuito deste tema base é justamente facilitar e acelerar o processo de desenvolvimento dos temas com várias ferramentas e padrões de projeto.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkioschi/wordpress-theme-boilerplate.git"
+  },
+  "keywords": [
+    "wordpress",
+    "boilerplate",
+    "sass",
+    "gulp"
+  ],
+  "author": "Mayko Kioschi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkioschi/wordpress-theme-boilerplate/issues"
+  },
+  "homepage": "https://github.com/mkioschi/wordpress-theme-boilerplate#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
